@@ -1,0 +1,13 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello World'
+
+@app.route('/govner')
+def hello_govner():
+    return 'Hello Govner'
+
+app.run(host='127.0.0.1', port=5000)
